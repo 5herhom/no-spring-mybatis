@@ -37,5 +37,9 @@ public class MainRun {
                 "cn.com.sherhom.mybatis.nospring.dao.UserDao.getById", 1l);
         log.info(user.toString());
 
+        user = session.selectOne(
+                "cn.com.sherhom.mybatis.nospring.dao.UserDao.getById", 1l);
+        log.info(user.toString());
+
     }
 }
